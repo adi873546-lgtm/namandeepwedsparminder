@@ -127,7 +127,7 @@ export function ScratchDateCard() {
       const step = Math.max(4, Math.floor(8 * dpr));
       for (let y = 0; y < canvas.height; y += step) {
         for (let x = 0; x < canvas.width; x += step) {
-          const alpha = data[(y * canvas.width + x) * 4 + 3];
+          const alpha = data[(y * canvas.width + x) * 4 + 3] ?? 255;
           total++;
           if (alpha < 100) cleared++;
         }

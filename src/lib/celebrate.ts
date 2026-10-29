@@ -48,6 +48,7 @@ export function celebrate(options?: { durationMs?: number; petalCount?: number }
   const particles: Particle[] = [];
   const spawn = (count: number, kinds: Particle["kind"][]) => {
     for (let i = 0; i < count; i++) {
+      const kind = kinds[Math.floor(Math.random() * kinds.length)] ?? "confetti";
       particles.push({
         x: Math.random() * window.innerWidth,
         y: -20 - Math.random() * window.innerHeight * 0.3,
@@ -56,8 +57,8 @@ export function celebrate(options?: { durationMs?: number; petalCount?: number }
         rotation: Math.random() * Math.PI * 2,
         vr: (Math.random() - 0.5) * 0.12,
         size: 6 + Math.random() * 10,
-        color: COLORS[Math.floor(Math.random() * COLORS.length)],
-        kind: kinds[Math.floor(Math.random() * kinds.length)],
+        color: COLORS[Math.floor(Math.random() * COLORS.length)] ?? "#D6B574",
+        kind,
         life: 1,
       });
     }
