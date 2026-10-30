@@ -98,6 +98,7 @@ export function ScratchDateCard() {
 
     const brushTo = (x: number, y: number) => {
       ctx.globalCompositeOperation = "destination-out";
+      ctx.fillStyle = "#000"; // fully opaque erase — one pass fully clears
       const r = 26;
       if (lastX >= 0) {
         // Interpolate so fast swipes leave no gaps.
