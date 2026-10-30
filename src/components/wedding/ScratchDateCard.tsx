@@ -118,6 +118,7 @@ export function ScratchDateCard() {
       }
       lastX = x;
       lastY = y;
+      console.log("DBG brush", x, y, "steps", ctx.globalCompositeOperation, ctx.fillStyle.toString());
     };
 
     const scratchedRatio = () => {
@@ -160,6 +161,7 @@ export function ScratchDateCard() {
 
     const onMove = (e: PointerEvent) => {
       if (!drawing) return;
+      console.log("DBG onMove", e.clientX, e.clientY);
       e.preventDefault();
       const { x, y } = pointFromEvent(e);
       brushTo(x, y);
