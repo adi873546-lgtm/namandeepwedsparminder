@@ -151,6 +151,7 @@ export function ScratchDateCard() {
     };
 
     const onDown = (e: PointerEvent) => {
+      console.log("DBG down", e.clientX, e.clientY, e.isPrimary, e.pointerId);
       drawing = true;
       lastX = -1;
       lastY = -1;
@@ -180,6 +181,7 @@ export function ScratchDateCard() {
       if (scratchedRatio() >= REVEAL_THRESHOLD) finishReveal();
     };
 
+    console.log("DBG listeners attached");
     canvas.addEventListener("pointerdown", onDown);
     canvas.addEventListener("pointermove", onMove);
     canvas.addEventListener("pointerup", onUp);
