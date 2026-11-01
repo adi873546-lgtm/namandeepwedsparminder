@@ -72,6 +72,8 @@ export function PhotoCarousel() {
     return () => window.removeEventListener("keydown", onKey);
   }, [selected, closeLightbox, stepLightbox]);
 
+  const activePhoto = selected === null ? undefined : PHOTOS[selected];
+
   return (
     <section id="gallery" className="relative overflow-hidden bg-ivory px-0 py-24 sm:py-32">
       <div className="mx-auto max-w-5xl px-6 text-center">
@@ -148,7 +150,7 @@ export function PhotoCarousel() {
         <div
           role="dialog"
           aria-modal="true"
-          aria-label={`Photo ${selected + 1} of ${PHOTOS.length}: ${PHOTOS[selected].caption}`}
+          aria-label={`Photo ${selected + 1} of ${PHOTOS.length}: ${activePhoto?.caption ?? ""}`}
           className="fixed inset-0 z-50 flex items-center justify-center bg-burgundy/90 p-4 backdrop-blur-sm animate-in fade-in duration-300"
           onClick={closeLightbox}
         >
@@ -188,14 +190,14 @@ export function PhotoCarousel() {
             onClick={(e) => e.stopPropagation()}
           >
             <img
-              src={PHOTOS[selected].src}
-              alt={PHOTOS[selected].caption}
+              src={activePhoto?.src}
+              alt={activePhoto?.caption}
               width={1200}
               height={1200}
               className="max-h-[82vh] w-auto rounded-[var(--radius-2xl)] border border-gold/50 object-contain"
             />
             <figcaption className="mt-4 text-center font-display text-lg italic text-ivory">
-              {PHOTOS[selected].caption}
+              {activePhoto?.caption}
               <span className="ml-3 font-body text-xs uppercase tracking-[0.3em] text-blush">
                 {selected + 1} / {PHOTOS.length}
               </span>

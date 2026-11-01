@@ -29,7 +29,7 @@ export function WeddingCeremony() {
           {c.heading}
         </h2>
         <p className="mt-6 font-script text-6xl leading-tight text-ivory drop-shadow-[0_2px_12px_rgba(0,0,0,0.35)] sm:text-8xl">
-          Ramandeep &amp; Parminder
+          Namandeep &amp; Parminder
         </p>
         <GoldDivider className="mt-8" />
 

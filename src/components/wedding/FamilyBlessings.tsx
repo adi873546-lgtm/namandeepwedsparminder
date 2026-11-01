@@ -33,7 +33,7 @@ export function FamilyBlessings() {
             </p>
 
             <h2 className="mt-8 font-script text-6xl leading-tight text-burgundy sm:text-8xl">
-              Ramandeep
+              Namandeep
             </h2>
             <p className="my-2 font-display text-xl italic text-dusty-rose sm:text-2xl">with</p>
             <h2 className="font-script text-6xl leading-tight text-burgundy sm:text-8xl">

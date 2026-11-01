@@ -44,7 +44,7 @@ export function ClosingSection() {
 
           <div className="mt-16">
             <h2 className="font-script text-6xl leading-tight text-burgundy sm:text-7xl">
-              Ramandeep &amp; Parminder
+              Namandeep &amp; Parminder
             </h2>
             <p className="mt-6 font-display text-2xl font-medium tracking-[0.12em] text-gold-deep sm:text-3xl">
               21 November 2026
