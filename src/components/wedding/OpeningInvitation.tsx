@@ -24,7 +24,7 @@ export function OpeningInvitation() {
         <GoldDivider className="mt-8 animate-in fade-in duration-1000 delay-150" />
 
         <h1 className="mt-10 animate-in fade-in zoom-in duration-1000 delay-300 font-script text-6xl leading-[1.15] text-burgundy sm:text-8xl">
-          Ramandeep
+          Namandeep
           <span className="mx-3 inline-block align-middle font-display text-2xl italic text-dusty-rose sm:text-4xl">
             weds
           </span>

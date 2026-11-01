@@ -78,17 +78,17 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Ramandeep Weds Parminder — Wedding Invitation" },
+      { title: "Namandeep Weds Parminder — Wedding Invitation" },
       {
         name: "description",
         content:
-          "The wedding invitation of Ramandeep and Parminder — 21 November 2026, Muzaffarpur, Bihar.",
+          "The wedding invitation of Namandeep and Parminder — 21 November 2026, Muzaffarpur, Bihar.",
       },
-      { property: "og:title", content: "Ramandeep Weds Parminder — Wedding Invitation" },
+      { property: "og:title", content: "Namandeep Weds Parminder — Wedding Invitation" },
       {
         property: "og:description",
         content:
-          "Together with our families, we invite you to celebrate the wedding of Ramandeep and Parminder.",
+          "Together with our families, we invite you to celebrate the wedding of Namandeep and Parminder.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },

@@ -5,9 +5,9 @@
  */
 
 export const wedding = {
-  groom: "Ramandeep",
+  groom: "Namandeep",
   bride: "Parminder",
-  coupleNames: "Ramandeep Weds Parminder",
+  coupleNames: "Namandeep Weds Parminder",
   weddingDateLabel: "Saturday, 21 November 2026",
 
   /** Live countdown target — the start of the wedding day in IST. */
@@ -22,7 +22,7 @@ export const wedding = {
 
   blessings: {
     heavenly: "With the Heavenly blessings of Gurupurab",
-    grandparents: "Sdn. Satik Kaur & Late Sdr. Hari Singh Jawa",
+    grandparents: "Sdn. Sant Kaur & Late Sdr. Hari Singh Jawa",
     honouredLine:
       "We feel privileged and honoured to have your gracious presence on the auspicious occasion of",
     parents: "Sdn. Gurmeet Kaur & Sdr. Jagjit Singh Jawa",
@@ -43,7 +43,7 @@ export const wedding = {
 
   ceremony: {
     heading: "The Wedding Ceremony",
-    coupleLabel: "Ramandeep & Parminder",
+    coupleLabel: "Namandeep & Parminder",
     dateLabel: "Saturday, 21 November 2026",
     baraat: {
       name: "Procession of Barat",
@@ -107,7 +107,7 @@ export const wedding = {
     "Sdr. Jagjit Singh Jawa",
     "Shri Arun Kumar Thakur",
     "Sdr. Harjot Singh Bhalla",
-    "Sdr. Harnyal Singh Jawa",
+    "Sdr. Hardyal Singh Jawa",
     "Dr. Kuldip Kaur",
     "Sdn. Amarjeet Kaur Bhalla",
   ],
