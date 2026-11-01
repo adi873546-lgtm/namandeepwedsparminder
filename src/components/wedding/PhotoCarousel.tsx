@@ -150,7 +150,7 @@ export function PhotoCarousel() {
         <div
           role="dialog"
           aria-modal="true"
-          aria-label={`Photo ${selected + 1} of ${PHOTOS.length}: ${PHOTOS[selected].caption}`}
+          aria-label={`Photo ${selected + 1} of ${PHOTOS.length}: ${activePhoto?.caption ?? ""}`}
           className="fixed inset-0 z-50 flex items-center justify-center bg-burgundy/90 p-4 backdrop-blur-sm animate-in fade-in duration-300"
           onClick={closeLightbox}
         >

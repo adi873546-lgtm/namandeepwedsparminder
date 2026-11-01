@@ -28,6 +28,7 @@ export function RsvpSection() {
 
   const validate = () => {
     const next: Partial<Record<"guestName" | "attendeeCount" | "attendance" | "message", string>> = {};
+    if (!guestName.trim()) next.guestName = "Please enter your full name.";
     else if (guestName.trim().length > 100) next.guestName = "Name must be under 100 characters.";
     const count = Number(attendeeCount);
     if (!Number.isInteger(count) || count < 1 || count > 20)
