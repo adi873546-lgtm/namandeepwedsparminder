@@ -190,14 +190,14 @@ export function PhotoCarousel() {
             onClick={(e) => e.stopPropagation()}
           >
             <img
-              src={PHOTOS[selected].src}
-              alt={PHOTOS[selected].caption}
+              src={activePhoto?.src}
+              alt={activePhoto?.caption}
               width={1200}
               height={1200}
               className="max-h-[82vh] w-auto rounded-[var(--radius-2xl)] border border-gold/50 object-contain"
             />
             <figcaption className="mt-4 text-center font-display text-lg italic text-ivory">
-              {PHOTOS[selected].caption}
+              {activePhoto?.caption}
               <span className="ml-3 font-body text-xs uppercase tracking-[0.3em] text-blush">
                 {selected + 1} / {PHOTOS.length}
               </span>
