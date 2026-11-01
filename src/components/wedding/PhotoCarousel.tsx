@@ -72,6 +72,8 @@ export function PhotoCarousel() {
     return () => window.removeEventListener("keydown", onKey);
   }, [selected, closeLightbox, stepLightbox]);
 
+  const activePhoto = selected === null ? undefined : PHOTOS[selected];
+
   return (
     <section id="gallery" className="relative overflow-hidden bg-ivory px-0 py-24 sm:py-32">
       <div className="mx-auto max-w-5xl px-6 text-center">

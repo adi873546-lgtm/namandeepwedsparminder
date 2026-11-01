@@ -18,7 +18,7 @@ export function RsvpSection() {
   const [attendance, setAttendance] = useState("");
   const [message, setMessage] = useState("");
   const [status, setStatus] = useState<Status>("idle");
-  const [errors, setErrors] = useState<Record<string, string>>({});
+  const [errors, setErrors] = useState<Partial<Record<"guestName" | "attendeeCount" | "attendance" | "message", string>>>({});
   const [serverError, setServerError] = useState<string | null>(null);
   const [alreadySubmitted, setAlreadySubmitted] = useState(false);
 
@@ -27,8 +27,7 @@ export function RsvpSection() {
   }, []);
 
   const validate = () => {
-    const next: Record<string, string> = {};
-    if (!guestName.trim()) next.guestName = "Please enter your full name.";
+    const next: Partial<Record<"guestName" | "attendeeCount" | "attendance" | "message", string>> = {};
     else if (guestName.trim().length > 100) next.guestName = "Name must be under 100 characters.";
     const count = Number(attendeeCount);
     if (!Number.isInteger(count) || count < 1 || count > 20)
